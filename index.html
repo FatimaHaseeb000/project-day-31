@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <header>
+        <h1>DICE GAME🎲</h1>
+      </header>
+    <div class="container">
+    
+            <h2 id="message">
+                Player 1 turn
+            </h2>
+        
+        <div class="players">
+            <section id="playerOne">
+                <h2>
+                    Score: <span id="playerOneScore">0</span>
+                </h2>
+                <div id="playerOneDice" class="dice active">-</div>
+            </section>
+            <section id="playerTwo">
+                <h2>
+                    Score: <span id="playerTwoScore">0</span>
+                </h2>
+                <div id="playerTwoDice" class="dice">-</div>
+            </section>
+        </div>
+    
+        <button id="rollDiceBtn" onclick="score()">Roll Dice</button>
+        <button id="resetBtn">Reset Game ⟳ </button>
+  </div>
+   <script src="./index.js"></script>
+</body>
+</html>
